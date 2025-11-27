@@ -1,0 +1,29 @@
+{
+    "name": "migration-release",
+    "version": "1.0.8",
+    "description": "Generate release & migration markdown from JSON",
+    "type": "module",
+    "main": "lib/release-tools.js",
+    "bin": {
+        "gen-release": "bin/gen-release.js",
+        "gen-migration": "bin/gen-migration.js",
+        "gen-migrations-all": "bin/gen-migrations-all.js"
+    },
+    "engines": {
+        "node": ">=14"
+    },
+    "keywords": [
+        "release",
+        "migration",
+        "markdown",
+        "json",
+        "versioning"
+    ],
+    "author": "nghtminhdev",
+    "license": "ISC",
+    "files": [
+        "lib",
+        "bin"
+    ],
+    "access": "public"
+}

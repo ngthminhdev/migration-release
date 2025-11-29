@@ -1,6 +1,6 @@
 {
     "name": "migration-release",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "Generate release & migration markdown from JSON",
     "type": "module",
     "main": "lib/release-tools.js",

@@ -85,7 +85,14 @@ releases/
       "id": "migration-001",
       "title": "Update database schema",
       "steps": [
-        "Run command: npm run migrate",
+        "First, backup your database",
+        {
+          "type": "bash",
+          "contents": [
+            "npm install",
+            "npm run migrate"
+          ]
+        },
         "Verify migration results"
       ]
     }
@@ -101,6 +108,15 @@ releases/
 - `breakingChanges`: Breaking changes
 - `deprecated`: Deprecated features
 - `tags`: Custom tags (optional, auto-generated if not provided)
+
+**Script Steps Format:**
+The `steps` array in scripts supports two formats:
+1. **Text string**: Simple step description displayed as bullet point
+2. **Code block object**: 
+   - `type`: Language for syntax highlighting (bash, javascript, sql, python, etc.)
+   - `contents`: Array of code lines
+
+You can mix both formats freely in the same script.
 
 ### CLI Commands
 
@@ -406,7 +422,14 @@ releases/
       "id": "migration-001",
       "title": "Cập nhật database schema",
       "steps": [
-        "Chạy lệnh: npm run migrate",
+        "Đầu tiên, backup database",
+        {
+          "type": "bash",
+          "contents": [
+            "npm install",
+            "npm run migrate"
+          ]
+        },
         "Kiểm tra kết quả migration"
       ]
     }
@@ -422,6 +445,15 @@ releases/
 - `breakingChanges`: Thay đổi gây breaking
 - `deprecated`: Tính năng đã deprecated
 - `tags`: Tags tùy chỉnh (tùy chọn, tự động tạo nếu không cung cấp)
+
+**Định dạng Script Steps:**
+Mảng `steps` trong scripts hỗ trợ 2 định dạng:
+1. **Chuỗi văn bản**: Mô tả bước đơn giản hiển thị dạng bullet point
+2. **Object code block**: 
+   - `type`: Ngôn ngữ để syntax highlighting (bash, javascript, sql, python, v.v.)
+   - `contents`: Mảng các dòng code
+
+Bạn có thể kết hợp tự do cả 2 định dạng trong cùng một script.
 
 ## Các lệnh CLI
 

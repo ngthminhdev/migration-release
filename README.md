@@ -108,6 +108,7 @@ releases/
 - `breakingChanges`: Breaking changes
 - `deprecated`: Deprecated features
 - `tags`: Custom tags (optional, auto-generated if not provided)
+- **Custom fields**: Any other field with an array of strings will be automatically rendered as a section (e.g., `"redis": ["item 1", "item 2"]` becomes `## Redis`)
 
 **Script Steps Format:**
 The `steps` array in scripts supports two formats:
@@ -445,6 +446,7 @@ releases/
 - `breakingChanges`: Thay đổi gây breaking
 - `deprecated`: Tính năng đã deprecated
 - `tags`: Tags tùy chỉnh (tùy chọn, tự động tạo nếu không cung cấp)
+- **Các field tùy chỉnh**: Bất kỳ field nào khác với array of strings sẽ tự động được render thành section (ví dụ: `"redis": ["item 1", "item 2"]` sẽ thành `## Redis`)
 
 **Định dạng Script Steps:**
 Mảng `steps` trong scripts hỗ trợ 2 định dạng:
